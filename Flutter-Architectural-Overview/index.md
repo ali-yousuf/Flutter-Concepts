@@ -33,4 +33,6 @@ Typically, developers interact with Flutter through the Flutter framework, which
   accessibility, text input).
 - Composites the app’s widget tree into a scene.
 
-
+# Rendering and layout
+## How UI render on android
+When drawing, you first call the Java code of the Android framework. The Android system libraries provide the components responsible for drawing themselves to a Canvas object, which Android can then render with Skia, a graphics engine written in C/C++ that calls the CPU or GPU to complete the drawing on the device.
